@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name             = 'VizuryRichNotification'
-  s.version          = '1.0.0'
+  s.version          = '1.1.1'
   s.summary          = 'Vizury Rich Notifications for iOS.'
 
   s.description  = <<-DESC
