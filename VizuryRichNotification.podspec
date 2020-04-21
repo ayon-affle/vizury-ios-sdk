@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.documentation_url = 'https://github.com/ayon-affle/vizury-ios-sdk'
 
   s.license      = { :type => 'Commercial', :file => 'LICENSE' }
-  s.author       = { 'Anurag Bhowmick' => 'anurag.bhowmick@affle.com' }
+  s.author       = { 'Ayon Chowdhury' => 'ayon.chowdhury@affle.com' }
   s.platform     = :ios
   s.ios.deployment_target = '9.0'
   s.source           = {
