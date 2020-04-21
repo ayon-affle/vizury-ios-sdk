@@ -1,6 +1,0 @@
-framework module Vizury_iOS_SDK {
-  umbrella header "Vizury_iOS_SDK.h"
-
-  export *
-  module * { export * }
-}

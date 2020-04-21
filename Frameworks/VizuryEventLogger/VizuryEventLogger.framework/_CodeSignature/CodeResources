@@ -8,17 +8,13 @@
 		<data>
 		Q/XYCqjxYl9WP7GxRz3eh6NgYPU=
 		</data>
-		<key>Headers/Vizury_iOS_SDK.h</key>
-		<data>
-		eNuMHVUpBcT8uHcDyxrPHEWdCWY=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		/Obrh0rsbH2ZZgNUBNdeRFoIOk8=
+		gSwYLW0qItQCTZjSgJJ6e9xOgBE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		rkD4wum8fgwdn+4GCq4Zch4S+Ks=
+		uAKSWOzMaAxirVAxHl2/fKgpkCw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -30,18 +26,11 @@
 			FiCyrQsUdsA3YHorjhmdUDmDVP5sBhC/e1NUrVgneO4=
 			</data>
 		</dict>
-		<key>Headers/Vizury_iOS_SDK.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KOKLuHZjOgdgUpLQw4s+fOQhtZetRsDaCR8vcxAr9Vc=
-			</data>
-		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0FMfMvcWXibEkt5x2uq6kjS+qrqlqXOStP21YkWqNdQ=
+			HrwmN3e90VeFEFV6qcvgF4XYig+yiijopntBQHOfVbM=
 			</data>
 		</dict>
 	</dict>
