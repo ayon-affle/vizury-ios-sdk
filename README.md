@@ -48,7 +48,7 @@ CocoaPods is a dependency manager for Objective C & Swift projects and makes int
 
     ```pod install```
     
-4. Now, open your project workspace and check if MoEngage SDK is properly added.
+4. Now, open your project workspace and check if `VizuryEventLogger` and `VizuryRichNotification` SDK is properly added.
 
 ### Getting the SDK Manually
 Download the latest Vizury iOS SDK [`VizuryEventLogger`][VizuryEventLogger_ios]. The framework file is available with `bitcode enabled` and `bitcode disabled`. Extract the required archive into a directory of your choice. The extracted file is `VizuryEventLogger.framework`
