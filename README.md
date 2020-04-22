@@ -44,7 +44,7 @@ CocoaPods is a dependency manager for Objective C & Swift projects and makes int
     
     ```pod 'VizuryRichNotification'```
     
-3. Install VizuryEventLogger and VizuryRichNotification SDK by executing the following in the Xcode project directory.
+3. Install 'VizuryEventLogger' and 'VizuryRichNotification' SDK by executing the following in the Xcode project directory.
 
     ```pod install```
     
