@@ -26,7 +26,7 @@ CocoaPods is a dependency manager for Objective C & Swift projects and makes int
 
 ### Vizury SDK Initialization
 
-  In your AppDelegate file add import the `VizuryEventLogger`
+  In your AppDelegate file import the `VizuryEventLogger`
 
 #### Objective-C
 ----  
