@@ -76,3 +76,11 @@ Where
 ``` 
  
 Thats it!! SDK is successfully integrated and initialized in the project, and ready to use.
+
+## Developer Docs
+Please refer to our developer docs to know how to make use of our SDK to track Events and User Attributes, to implement Push Notification: https://bitbucket.org/vizury/vizury-ios-sdk/src/master/.
+
+## Support
+Please visit this repository's [Github issue tracker](https://github.com/moengage/MoEngage-iOS-SDK/issues) for bug reports specific to our iOS SDK.
+For other issues and support please contact Vizury support from your dashboard.
+
