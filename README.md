@@ -75,3 +75,4 @@ Where
   isFCMEnabled  : true/false depending on if you want to use vizury for push
 ``` 
  
+Thats it!! SDK is successfully integrated and initialized in the project, and ready to use.
