@@ -31,7 +31,25 @@ Examples on how the Vizury iOS SDK can be integrated.
 
 ## Basic Integration
 
-### Getting the SDK
+### Integration through CocoaPods
+CocoaPods is a dependency manager for Objective C & Swift projects and makes integration easier.
+
+1. If you don't have CocoaPods installed, you can do it by executing the following line in your terminal.
+
+    ```sudo gem install cocoapods```
+    
+2. If you don't have a Podfile, create a plain text file named Podfile in the Xcode project directory with the following content, making sure to set the platform and version that matches your app.
+
+    ```pod 'VizuryEventLogger'```
+    ```pod 'VizuryRichNotification'```
+    
+3. Install VizuryEventLogger and VizuryRichNotification SDK by executing the following in the Xcode project directory.
+
+    ```pod install```
+    
+4. Now, open your project workspace and check if MoEngage SDK is properly added.
+
+### Getting the SDK Manually
 Download the latest Vizury iOS SDK [`VizuryEventLogger`][VizuryEventLogger_ios]. The framework file is available with `bitcode enabled` and `bitcode disabled`. Extract the required archive into a directory of your choice. The extracted file is `VizuryEventLogger.framework`
 
 ### Add the SDK to project
