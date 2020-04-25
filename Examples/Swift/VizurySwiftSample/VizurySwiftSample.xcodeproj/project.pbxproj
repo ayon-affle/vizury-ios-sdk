@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A4F0F932454AA78001E6E52 /* VizuryRichNotification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4F0F922454AA78001E6E52 /* VizuryRichNotification.framework */; };
 		1A8DCED8245207A6000D7185 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8DCED7245207A6000D7185 /* NotificationService.swift */; };
 		1A8DCEDC245207A6000D7185 /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1A8DCED5245207A6000D7185 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1AE7444524514BB000BD08E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE7444424514BB000BD08E8 /* AppDelegate.swift */; };
@@ -46,7 +45,6 @@
 
 /* Begin PBXFileReference section */
 		16D66A4C45E77C3045A730E1 /* Pods_NotificationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A4F0F922454AA78001E6E52 /* VizuryRichNotification.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VizuryRichNotification.framework; sourceTree = "<group>"; };
 		1A8DCED5245207A6000D7185 /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A8DCED7245207A6000D7185 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		1A8DCED9245207A6000D7185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A4F0F932454AA78001E6E52 /* VizuryRichNotification.framework in Frameworks */,
 				EDEB570A0DE27E01852F15E3 /* Pods_VizurySwiftSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +133,6 @@
 		3CAA574A2E488BF5F03193C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1A4F0F922454AA78001E6E52 /* VizuryRichNotification.framework */,
 				16D66A4C45E77C3045A730E1 /* Pods_NotificationService.framework */,
 				231A57C37E218C8D66B6467A /* Pods_VizurySwiftSample.framework */,
 			);
