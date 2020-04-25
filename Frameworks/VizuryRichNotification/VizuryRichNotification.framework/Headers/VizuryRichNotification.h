@@ -14,7 +14,7 @@
 /**
  * Call this to get an instance of type VizuryRichNotification
  **/
-+ (id _Nullable ) getInstance;
++(VizuryRichNotification*) getInstance;
 
 /**
  * Call this method to handle a rich media notification
