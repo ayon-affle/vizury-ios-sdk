@@ -69,9 +69,11 @@ PODS:
   - PromisesObjC (1.2.8)
   - VizuryEventLogger (1.0.0):
     - Firebase
+  - VizuryRichNotification (1.1.2)
 
 DEPENDENCIES:
   - VizuryEventLogger
+  - VizuryRichNotification
 
 SPEC REPOS:
   trunk:
@@ -88,6 +90,7 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - VizuryEventLogger
+    - VizuryRichNotification
 
 SPEC CHECKSUMS:
   Firebase: 585ae467b3edda6a5444e788fda6888f024d8d6f
@@ -103,7 +106,8 @@ SPEC CHECKSUMS:
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   VizuryEventLogger: f8067b2486013c701963a7002f763646b1350077
+  VizuryRichNotification: 9800592432d018d5649d8d00ea50a9815ad4cca6
 
-PODFILE CHECKSUM: a4d663f84fa53d57a79ed94669646e853c5a00d9
+PODFILE CHECKSUM: 24adf77ecb4fc9287eb400341dc461fa088587ec
 
 COCOAPODS: 1.8.4

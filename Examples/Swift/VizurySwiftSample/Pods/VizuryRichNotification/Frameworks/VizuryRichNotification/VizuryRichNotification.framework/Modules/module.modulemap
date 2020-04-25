@@ -1,0 +1,6 @@
+framework module VizuryRichNotification {
+  umbrella header "VizuryRichNotification.h"
+
+  export *
+  module * { export * }
+}

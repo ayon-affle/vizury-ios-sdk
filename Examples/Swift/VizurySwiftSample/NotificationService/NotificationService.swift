@@ -7,6 +7,7 @@
 //
 
 import UserNotifications
+import VizuryRichNotification
 
 class NotificationService: UNNotificationServiceExtension {
 
@@ -23,6 +24,8 @@ class NotificationService: UNNotificationServiceExtension {
             
             contentHandler(bestAttemptContent)
         }
+        
+        VizuryRichNotification.getInstance()?.didReceive(request, withContentHandler: contentHandler)
     }
     
     override func serviceExtensionTimeWillExpire() {
