@@ -1,0 +1,6 @@
+framework module Pods_VizurySwiftSample {
+  umbrella header "Pods-VizurySwiftSample-umbrella.h"
+
+  export *
+  module * { export * }
+}

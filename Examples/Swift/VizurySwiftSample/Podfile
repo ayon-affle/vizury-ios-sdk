@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'NotificationService' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for NotificationService
+    platform :ios, '9.0'
+    pod 'VizuryEventLogger'
+#    pod 'VizuryRichNotification'
+end
+
+target 'VizurySwiftSample' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for VizurySwiftSample
+    platform :ios, '10.0'
+    inherit! :search_paths
+end
