@@ -20,7 +20,9 @@ class ViewController: UIViewController {
         let attributeDictionary = NSDictionary(dictionary: ["productid" : "AKSJDASNBD",
                                                             "productPrice": "789",
                                                             "category": "Shirt"])
-        VizuryEventLogger.logEvent("productPage", withAttributes: attributeDictionary as? [AnyHashable : Any])
+        DispatchQueue.main.async {
+            VizuryEventLogger.logEvent("productPage", withAttributes: attributeDictionary as? [AnyHashable : Any])
+        }
     }
     
     @IBAction func jsonEvent(_ sender: Any) {
