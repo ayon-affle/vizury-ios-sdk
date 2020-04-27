@@ -69,11 +69,11 @@ PODS:
   - PromisesObjC (1.2.8)
   - VizuryEventLogger (1.0.0):
     - Firebase
-  - VizuryRichNotification (1.1.2)
+  - VizuryRichNotification (1.1.1)
 
 DEPENDENCIES:
-  - VizuryEventLogger
-  - VizuryRichNotification
+  - VizuryEventLogger (from `https://github.com/ayon-affle/vizury-ios-sdk.git`, tag `vizuryeventlogger-1.0.0`)
+  - VizuryRichNotification (from `https://github.com/ayon-affle/vizury-ios-sdk.git`, tag `richpush-1.1.2`)
 
 SPEC REPOS:
   trunk:
@@ -89,8 +89,22 @@ SPEC REPOS:
     - GoogleUtilities
     - nanopb
     - PromisesObjC
-    - VizuryEventLogger
-    - VizuryRichNotification
+
+EXTERNAL SOURCES:
+  VizuryEventLogger:
+    :git: https://github.com/ayon-affle/vizury-ios-sdk.git
+    :tag: vizuryeventlogger-1.0.0
+  VizuryRichNotification:
+    :git: https://github.com/ayon-affle/vizury-ios-sdk.git
+    :tag: richpush-1.1.2
+
+CHECKOUT OPTIONS:
+  VizuryEventLogger:
+    :git: https://github.com/ayon-affle/vizury-ios-sdk.git
+    :tag: vizuryeventlogger-1.0.0
+  VizuryRichNotification:
+    :git: https://github.com/ayon-affle/vizury-ios-sdk.git
+    :tag: richpush-1.1.2
 
 SPEC CHECKSUMS:
   Firebase: 585ae467b3edda6a5444e788fda6888f024d8d6f
@@ -106,8 +120,8 @@ SPEC CHECKSUMS:
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   VizuryEventLogger: f8067b2486013c701963a7002f763646b1350077
-  VizuryRichNotification: 9800592432d018d5649d8d00ea50a9815ad4cca6
+  VizuryRichNotification: a490cd7eb893d93519877d18e3f98245410b2f29
 
-PODFILE CHECKSUM: 24adf77ecb4fc9287eb400341dc461fa088587ec
+PODFILE CHECKSUM: b718cdb68c28bd4d4a00a1acaba99e8ff041acb2
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

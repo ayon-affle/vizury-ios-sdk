@@ -1,23 +1,21 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
-source 'https://cdn.cocoapods.org/'
-
-target 'NotificationService' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for NotificationService
-    platform :ios, '9.0'
-    pod 'VizuryEventLogger'
-    pod 'VizuryRichNotification'
-#    pod 'VizuryRichNotification'
-end
 
 target 'VizurySwiftSample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for VizurySwiftSample
-    platform :ios, '10.0'
-    inherit! :search_paths
+    pod 'VizuryEventLogger', :git => 'https://github.com/ayon-affle/vizury-ios-sdk.git', :tag => 'vizuryeventlogger-1.0.0'
+
+end
+
+
+target 'NotificationService' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for VizurySwiftSample
+    pod 'VizuryRichNotification', :git => 'https://github.com/ayon-affle/vizury-ios-sdk.git', :tag => 'richpush-1.1.2'
+
 end

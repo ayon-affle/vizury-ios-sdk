@@ -2,5 +2,5 @@ ${PODS_ROOT}/Target Support Files/Pods-VizurySwiftSample/Pods-VizurySwiftSample-
 ${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework
 ${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework
 ${PODS_ROOT}/VizuryEventLogger/Frameworks/VizuryEventLogger/VizuryEventLogger.framework
-${PODS_ROOT}/VizuryRichNotification/Frameworks/VizuryRichNotification/VizuryRichNotification.framework
 ${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework
+${PODS_ROOT}/VizuryRichNotification/Frameworks/VizuryRichNotification/VizuryRichNotification.framework

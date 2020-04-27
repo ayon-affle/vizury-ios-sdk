@@ -9,7 +9,6 @@
 import UIKit
 import VizuryEventLogger
 import UserNotifications
-import VizuryRichNotification
 
 
 @UIApplicationMain
