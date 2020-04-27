@@ -1,1 +1,0 @@
-# vizury-ios-sdk
