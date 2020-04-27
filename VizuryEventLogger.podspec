@@ -27,7 +27,5 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   spec.frameworks = 'Foundation', 'UIKit', 'SystemConfiguration' , 'Security'
   spec.weak_framework = 'UserNotifications',  'WebKit'
-  spec.dependency 'Firebase'
-  spec.static_framework = true
 
 end

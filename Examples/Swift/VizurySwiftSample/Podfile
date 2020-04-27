@@ -6,7 +6,7 @@ target 'VizurySwiftSample' do
   use_frameworks!
 
   # Pods for VizurySwiftSample
-    pod 'VizuryEventLogger', :git => 'https://github.com/ayon-affle/vizury-ios-sdk.git', :tag => 'vizuryeventlogger-1.0.0'
+    pod 'VizuryEventLogger'
 
 end
 
@@ -16,6 +16,6 @@ target 'NotificationService' do
   use_frameworks!
 
   # Pods for VizurySwiftSample
-    pod 'VizuryRichNotification', :git => 'https://github.com/ayon-affle/vizury-ios-sdk.git', :tag => 'richpush-1.1.2'
+    pod 'VizuryRichNotification'
 
 end
