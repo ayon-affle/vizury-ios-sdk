@@ -8,6 +8,7 @@ target 'VizurySwiftSample' do
   # Pods for VizurySwiftSample
     pod 'VizuryEventLogger', :git => 'https://github.com/ayon-affle/vizury-ios-sdk.git', :tag => 'vizuryeventlogger-1.1.7'
     pod 'Firebase/Messaging'
+    pod 'Firebase/Analytics'
 end
 
 

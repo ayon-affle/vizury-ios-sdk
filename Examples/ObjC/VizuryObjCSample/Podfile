@@ -7,5 +7,15 @@ target 'VizuryObjCSample' do
 
   # Pods for VizuryObjCSample
     pod 'VizuryEventLogger'
+    pod 'Firebase/Messaging'
+
+end
+
+target 'NotificationService' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for VizuryObjCSample
+    pod 'VizuryRichNotification'
 
 end

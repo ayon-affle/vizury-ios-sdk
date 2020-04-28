@@ -9,6 +9,7 @@
 import UIKit
 import VizuryEventLogger
 import UserNotifications
+import Firebase
 
 
 @UIApplicationMain
@@ -25,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                 serverURL: SERVER_URL,
                                                 withCachingEnabled: false,
                                                 andWithFCMEnabled: true)
+        FirebaseApp.configure()
         registerForRemoteNotification(application)
         return true
     }
@@ -44,6 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        print(deviceToken)
         VizuryEventLogger.registerForPush(withToken: deviceToken)
     }
 
@@ -55,14 +58,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         VizuryEventLogger.didReceiveRemoteNotification(in: application, withUserInfo: userInfo)
         if application.applicationState == UIApplication.State.inactive {
             print("Appilication Inactive - the user has tapped in the notification when app was closed or in background")
-            self.customPushHandler(notification: userInfo as NSDictionary)
+            self.customPushHandler(userInfo: userInfo)
         }
+        
+        completionHandler(UIBackgroundFetchResult.newData)
     }
     
-    func customPushHandler(notification: NSDictionary) {
-        if notification.object(forKey: DEEP_LINK_KEY) != nil {
-            let deeplink = notification.object(forKey: DEEP_LINK_KEY) as! String
-            print(deeplink)
+    func customPushHandler(userInfo: [AnyHashable : Any]) {
+        if let deeplink =  userInfo[AnyHashable("deeplink")] {
+        // handle the deeplink
+            print("deeplink is ", deeplink)
         }
     }
     // MARK: UISceneSession Lifecycle
