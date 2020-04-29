@@ -7,38 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AE5283E2457FE91002EC564 /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1AE528362457FE91002EC564 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		1AE528462457FEBB002EC564 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE528432457FEBB002EC564 /* NotificationService.m */; };
-		1AE528472457FEBB002EC564 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AE528452457FEBB002EC564 /* Info.plist */; };
-		1AF7BE802456945600E6941A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7BE7F2456945600E6941A /* AppDelegate.m */; };
-		1AF7BE832456945600E6941A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7BE822456945600E6941A /* SceneDelegate.m */; };
-		1AF7BE862456945600E6941A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7BE852456945600E6941A /* ViewController.m */; };
-		1AF7BE892456945600E6941A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF7BE872456945600E6941A /* Main.storyboard */; };
-		1AF7BE8B2456945800E6941A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AF7BE8A2456945800E6941A /* Assets.xcassets */; };
-		1AF7BE8E2456945800E6941A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF7BE8C2456945800E6941A /* LaunchScreen.storyboard */; };
-		1AF7BE912456945800E6941A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7BE902456945800E6941A /* main.m */; };
-		5A6C0A00180AB6090E7768ED /* Pods_NotificationService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A808376507814FAB15BCA5A /* Pods_NotificationService.framework */; };
-		C2D3FFDC5E7B14CE4298C266 /* Pods_VizuryObjCSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD978C078EBC5762497E8DC0 /* Pods_VizuryObjCSample.framework */; };
+		0B8452628C022281509C6E98 /* Pods_NotificationService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78AC6291F51AAB189E6B117 /* Pods_NotificationService.framework */; };
+		1AFF8F1D24594B74007A90B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF8F1C24594B74007A90B5 /* AppDelegate.m */; };
+		1AFF8F2024594B74007A90B5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF8F1F24594B74007A90B5 /* SceneDelegate.m */; };
+		1AFF8F2324594B74007A90B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF8F2224594B74007A90B5 /* ViewController.m */; };
+		1AFF8F2624594B74007A90B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFF8F2424594B74007A90B5 /* Main.storyboard */; };
+		1AFF8F2824594B75007A90B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AFF8F2724594B75007A90B5 /* Assets.xcassets */; };
+		1AFF8F2B24594B75007A90B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFF8F2924594B75007A90B5 /* LaunchScreen.storyboard */; };
+		1AFF8F2E24594B75007A90B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF8F2D24594B75007A90B5 /* main.m */; };
+		1AFF8F3C24594C4B007A90B5 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF8F3B24594C4B007A90B5 /* NotificationService.m */; };
+		1AFF8F4024594C4B007A90B5 /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1AFF8F3824594C4B007A90B5 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1AFF8F4624595018007A90B5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AFF8F4524595018007A90B5 /* GoogleService-Info.plist */; };
+		6D3933CE80487DCCC11E1D5D /* Pods_VizuryObjCSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 058D78121299ECF3BEC2C84C /* Pods_VizuryObjCSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1AE5283C2457FE91002EC564 /* PBXContainerItemProxy */ = {
+		1AFF8F3E24594C4B007A90B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1AF7BE732456945600E6941A /* Project object */;
+			containerPortal = 1AFF8F1024594B74007A90B5 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1AE528352457FE91002EC564;
+			remoteGlobalIDString = 1AFF8F3724594C4B007A90B5;
 			remoteInfo = NotificationService;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1AE5282E2457FE72002EC564 /* Embed App Extensions */ = {
+		1AFF8F4124594C4B007A90B5 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				1AE5283E2457FE91002EC564 /* NotificationService.appex in Embed App Extensions */,
+				1AFF8F4024594C4B007A90B5 /* NotificationService.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,129 +46,156 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1AE528362457FE91002EC564 /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AE528432457FEBB002EC564 /* NotificationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
-		1AE528442457FEBB002EC564 /* NotificationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
-		1AE528452457FEBB002EC564 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1AF7BE7B2456945600E6941A /* VizuryObjCSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VizuryObjCSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AF7BE7E2456945600E6941A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1AF7BE7F2456945600E6941A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1AF7BE812456945600E6941A /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		1AF7BE822456945600E6941A /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		1AF7BE842456945600E6941A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1AF7BE852456945600E6941A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1AF7BE882456945600E6941A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1AF7BE8A2456945800E6941A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1AF7BE8D2456945800E6941A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1AF7BE8F2456945800E6941A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1AF7BE902456945800E6941A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4A808376507814FAB15BCA5A /* Pods_NotificationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AC051882C4EA915D9554958 /* Pods-VizuryObjCSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VizuryObjCSample.debug.xcconfig"; path = "Target Support Files/Pods-VizuryObjCSample/Pods-VizuryObjCSample.debug.xcconfig"; sourceTree = "<group>"; };
-		AD978C078EBC5762497E8DC0 /* Pods_VizuryObjCSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VizuryObjCSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D06B0C46A8B2E49E77F78950 /* Pods-NotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.release.xcconfig"; path = "Target Support Files/Pods-NotificationService/Pods-NotificationService.release.xcconfig"; sourceTree = "<group>"; };
-		D5DFFA15B622D5E78EC9DD02 /* Pods-NotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.debug.xcconfig"; path = "Target Support Files/Pods-NotificationService/Pods-NotificationService.debug.xcconfig"; sourceTree = "<group>"; };
-		FD2726EEC32A92A085D71D21 /* Pods-VizuryObjCSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VizuryObjCSample.release.xcconfig"; path = "Target Support Files/Pods-VizuryObjCSample/Pods-VizuryObjCSample.release.xcconfig"; sourceTree = "<group>"; };
+		058D78121299ECF3BEC2C84C /* Pods_VizuryObjCSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VizuryObjCSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AFF8F1824594B74007A90B5 /* VizuryObjCSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VizuryObjCSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AFF8F1B24594B74007A90B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1AFF8F1C24594B74007A90B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1AFF8F1E24594B74007A90B5 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		1AFF8F1F24594B74007A90B5 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		1AFF8F2124594B74007A90B5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1AFF8F2224594B74007A90B5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1AFF8F2524594B74007A90B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1AFF8F2724594B75007A90B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AFF8F2A24594B75007A90B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1AFF8F2C24594B75007A90B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AFF8F2D24594B75007A90B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1AFF8F3824594C4B007A90B5 /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AFF8F3A24594C4B007A90B5 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		1AFF8F3B24594C4B007A90B5 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		1AFF8F3D24594C4B007A90B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AFF8F4524595018007A90B5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1AFF8F472459504D007A90B5 /* VizuryObjCSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VizuryObjCSample.entitlements; sourceTree = "<group>"; };
+		1AFF8F48245951AD007A90B5 /* NotificationService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationService.entitlements; sourceTree = "<group>"; };
+		CBF2E5EDDD53712188C6E4DD /* Pods-VizuryObjCSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VizuryObjCSample.release.xcconfig"; path = "Target Support Files/Pods-VizuryObjCSample/Pods-VizuryObjCSample.release.xcconfig"; sourceTree = "<group>"; };
+		F3180258A8DFAE2B08DF997D /* Pods-NotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.debug.xcconfig"; path = "Target Support Files/Pods-NotificationService/Pods-NotificationService.debug.xcconfig"; sourceTree = "<group>"; };
+		F6B04FF74C371F14B354FB7F /* Pods-VizuryObjCSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VizuryObjCSample.debug.xcconfig"; path = "Target Support Files/Pods-VizuryObjCSample/Pods-VizuryObjCSample.debug.xcconfig"; sourceTree = "<group>"; };
+		F78AC6291F51AAB189E6B117 /* Pods_NotificationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7D321971AFE77554004543E /* Pods-NotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.release.xcconfig"; path = "Target Support Files/Pods-NotificationService/Pods-NotificationService.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1AE528332457FE91002EC564 /* Frameworks */ = {
+		1AFF8F1524594B74007A90B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A6C0A00180AB6090E7768ED /* Pods_NotificationService.framework in Frameworks */,
+				6D3933CE80487DCCC11E1D5D /* Pods_VizuryObjCSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1AF7BE782456945600E6941A /* Frameworks */ = {
+		1AFF8F3524594C4B007A90B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2D3FFDC5E7B14CE4298C266 /* Pods_VizuryObjCSample.framework in Frameworks */,
+				0B8452628C022281509C6E98 /* Pods_NotificationService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07C77786AE4D98F1CA136128 /* Pods */ = {
+		1AFF8F0F24594B74007A90B5 = {
 			isa = PBXGroup;
 			children = (
-				9AC051882C4EA915D9554958 /* Pods-VizuryObjCSample.debug.xcconfig */,
-				FD2726EEC32A92A085D71D21 /* Pods-VizuryObjCSample.release.xcconfig */,
-				D5DFFA15B622D5E78EC9DD02 /* Pods-NotificationService.debug.xcconfig */,
-				D06B0C46A8B2E49E77F78950 /* Pods-NotificationService.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		1AE528422457FEBB002EC564 /* NotificationService */ = {
-			isa = PBXGroup;
-			children = (
-				1AE528432457FEBB002EC564 /* NotificationService.m */,
-				1AE528442457FEBB002EC564 /* NotificationService.h */,
-				1AE528452457FEBB002EC564 /* Info.plist */,
-			);
-			path = NotificationService;
-			sourceTree = "<group>";
-		};
-		1AF7BE722456945600E6941A = {
-			isa = PBXGroup;
-			children = (
-				1AF7BE7D2456945600E6941A /* VizuryObjCSample */,
-				1AE528422457FEBB002EC564 /* NotificationService */,
-				1AF7BE7C2456945600E6941A /* Products */,
-				07C77786AE4D98F1CA136128 /* Pods */,
-				428D6D72410C084AA2D00212 /* Frameworks */,
+				1AFF8F1A24594B74007A90B5 /* VizuryObjCSample */,
+				1AFF8F3924594C4B007A90B5 /* NotificationService */,
+				1AFF8F1924594B74007A90B5 /* Products */,
+				ED63E1A4FB884CE4DE9478A8 /* Pods */,
+				B1CBAC1B60B2D4F0CBA48549 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		1AF7BE7C2456945600E6941A /* Products */ = {
+		1AFF8F1924594B74007A90B5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1AF7BE7B2456945600E6941A /* VizuryObjCSample.app */,
-				1AE528362457FE91002EC564 /* NotificationService.appex */,
+				1AFF8F1824594B74007A90B5 /* VizuryObjCSample.app */,
+				1AFF8F3824594C4B007A90B5 /* NotificationService.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1AF7BE7D2456945600E6941A /* VizuryObjCSample */ = {
+		1AFF8F1A24594B74007A90B5 /* VizuryObjCSample */ = {
 			isa = PBXGroup;
 			children = (
-				1AF7BE7E2456945600E6941A /* AppDelegate.h */,
-				1AF7BE7F2456945600E6941A /* AppDelegate.m */,
-				1AF7BE812456945600E6941A /* SceneDelegate.h */,
-				1AF7BE822456945600E6941A /* SceneDelegate.m */,
-				1AF7BE842456945600E6941A /* ViewController.h */,
-				1AF7BE852456945600E6941A /* ViewController.m */,
-				1AF7BE872456945600E6941A /* Main.storyboard */,
-				1AF7BE8A2456945800E6941A /* Assets.xcassets */,
-				1AF7BE8C2456945800E6941A /* LaunchScreen.storyboard */,
-				1AF7BE8F2456945800E6941A /* Info.plist */,
-				1AF7BE902456945800E6941A /* main.m */,
+				1AFF8F472459504D007A90B5 /* VizuryObjCSample.entitlements */,
+				1AFF8F4524595018007A90B5 /* GoogleService-Info.plist */,
+				1AFF8F1B24594B74007A90B5 /* AppDelegate.h */,
+				1AFF8F1C24594B74007A90B5 /* AppDelegate.m */,
+				1AFF8F1E24594B74007A90B5 /* SceneDelegate.h */,
+				1AFF8F1F24594B74007A90B5 /* SceneDelegate.m */,
+				1AFF8F2124594B74007A90B5 /* ViewController.h */,
+				1AFF8F2224594B74007A90B5 /* ViewController.m */,
+				1AFF8F2424594B74007A90B5 /* Main.storyboard */,
+				1AFF8F2724594B75007A90B5 /* Assets.xcassets */,
+				1AFF8F2924594B75007A90B5 /* LaunchScreen.storyboard */,
+				1AFF8F2C24594B75007A90B5 /* Info.plist */,
+				1AFF8F2D24594B75007A90B5 /* main.m */,
 			);
 			path = VizuryObjCSample;
 			sourceTree = "<group>";
 		};
-		428D6D72410C084AA2D00212 /* Frameworks */ = {
+		1AFF8F3924594C4B007A90B5 /* NotificationService */ = {
 			isa = PBXGroup;
 			children = (
-				AD978C078EBC5762497E8DC0 /* Pods_VizuryObjCSample.framework */,
-				4A808376507814FAB15BCA5A /* Pods_NotificationService.framework */,
+				1AFF8F48245951AD007A90B5 /* NotificationService.entitlements */,
+				1AFF8F3A24594C4B007A90B5 /* NotificationService.h */,
+				1AFF8F3B24594C4B007A90B5 /* NotificationService.m */,
+				1AFF8F3D24594C4B007A90B5 /* Info.plist */,
+			);
+			path = NotificationService;
+			sourceTree = "<group>";
+		};
+		B1CBAC1B60B2D4F0CBA48549 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F78AC6291F51AAB189E6B117 /* Pods_NotificationService.framework */,
+				058D78121299ECF3BEC2C84C /* Pods_VizuryObjCSample.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED63E1A4FB884CE4DE9478A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3180258A8DFAE2B08DF997D /* Pods-NotificationService.debug.xcconfig */,
+				F7D321971AFE77554004543E /* Pods-NotificationService.release.xcconfig */,
+				F6B04FF74C371F14B354FB7F /* Pods-VizuryObjCSample.debug.xcconfig */,
+				CBF2E5EDDD53712188C6E4DD /* Pods-VizuryObjCSample.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1AE528352457FE91002EC564 /* NotificationService */ = {
+		1AFF8F1724594B74007A90B5 /* VizuryObjCSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1AE5283F2457FE91002EC564 /* Build configuration list for PBXNativeTarget "NotificationService" */;
+			buildConfigurationList = 1AFF8F3124594B75007A90B5 /* Build configuration list for PBXNativeTarget "VizuryObjCSample" */;
 			buildPhases = (
-				1CB5FF5950CEE90F445BB697 /* [CP] Check Pods Manifest.lock */,
-				1AE528322457FE91002EC564 /* Sources */,
-				1AE528332457FE91002EC564 /* Frameworks */,
-				1AE528342457FE91002EC564 /* Resources */,
+				6ABA56E27FA9F9BA0837B283 /* [CP] Check Pods Manifest.lock */,
+				1AFF8F1424594B74007A90B5 /* Sources */,
+				1AFF8F1524594B74007A90B5 /* Frameworks */,
+				1AFF8F1624594B74007A90B5 /* Resources */,
+				1AFF8F4124594C4B007A90B5 /* Embed App Extensions */,
+				F3E5FCE35445FC0420154B37 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AFF8F3F24594C4B007A90B5 /* PBXTargetDependency */,
+			);
+			name = VizuryObjCSample;
+			productName = VizuryObjCSample;
+			productReference = 1AFF8F1824594B74007A90B5 /* VizuryObjCSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AFF8F3724594C4B007A90B5 /* NotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AFF8F4424594C4B007A90B5 /* Build configuration list for PBXNativeTarget "NotificationService" */;
+			buildPhases = (
+				955D3C2888FFA63534653B03 /* [CP] Check Pods Manifest.lock */,
+				1AFF8F3424594C4B007A90B5 /* Sources */,
+				1AFF8F3524594C4B007A90B5 /* Frameworks */,
+				1AFF8F3624594C4B007A90B5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -176,49 +203,27 @@
 			);
 			name = NotificationService;
 			productName = NotificationService;
-			productReference = 1AE528362457FE91002EC564 /* NotificationService.appex */;
+			productReference = 1AFF8F3824594C4B007A90B5 /* NotificationService.appex */;
 			productType = "com.apple.product-type.app-extension";
-		};
-		1AF7BE7A2456945600E6941A /* VizuryObjCSample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1AF7BE942456945800E6941A /* Build configuration list for PBXNativeTarget "VizuryObjCSample" */;
-			buildPhases = (
-				835A21B5164305AC0B6AAC7A /* [CP] Check Pods Manifest.lock */,
-				1AF7BE772456945600E6941A /* Sources */,
-				1AF7BE782456945600E6941A /* Frameworks */,
-				1AF7BE792456945600E6941A /* Resources */,
-				BA2BBF499B5204BB4929A207 /* [CP] Embed Pods Frameworks */,
-				1AE5282E2457FE72002EC564 /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1AE5283D2457FE91002EC564 /* PBXTargetDependency */,
-			);
-			name = VizuryObjCSample;
-			productName = VizuryObjCSample;
-			productReference = 1AF7BE7B2456945600E6941A /* VizuryObjCSample.app */;
-			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1AF7BE732456945600E6941A /* Project object */ = {
+		1AFF8F1024594B74007A90B5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Chowdhury Md Rajib  Sarwar";
 				TargetAttributes = {
-					1AE528352457FE91002EC564 = {
+					1AFF8F1724594B74007A90B5 = {
 						CreatedOnToolsVersion = 11.3;
 					};
-					1AF7BE7A2456945600E6941A = {
+					1AFF8F3724594C4B007A90B5 = {
 						CreatedOnToolsVersion = 11.3;
 					};
 				};
 			};
-			buildConfigurationList = 1AF7BE762456945600E6941A /* Build configuration list for PBXProject "VizuryObjCSample" */;
+			buildConfigurationList = 1AFF8F1324594B74007A90B5 /* Build configuration list for PBXProject "VizuryObjCSample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -226,62 +231,40 @@
 				en,
 				Base,
 			);
-			mainGroup = 1AF7BE722456945600E6941A;
-			productRefGroup = 1AF7BE7C2456945600E6941A /* Products */;
+			mainGroup = 1AFF8F0F24594B74007A90B5;
+			productRefGroup = 1AFF8F1924594B74007A90B5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1AF7BE7A2456945600E6941A /* VizuryObjCSample */,
-				1AE528352457FE91002EC564 /* NotificationService */,
+				1AFF8F1724594B74007A90B5 /* VizuryObjCSample */,
+				1AFF8F3724594C4B007A90B5 /* NotificationService */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1AE528342457FE91002EC564 /* Resources */ = {
+		1AFF8F1624594B74007A90B5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AFF8F2B24594B75007A90B5 /* LaunchScreen.storyboard in Resources */,
+				1AFF8F4624595018007A90B5 /* GoogleService-Info.plist in Resources */,
+				1AFF8F2824594B75007A90B5 /* Assets.xcassets in Resources */,
+				1AFF8F2624594B74007A90B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1AF7BE792456945600E6941A /* Resources */ = {
+		1AFF8F3624594C4B007A90B5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AE528472457FEBB002EC564 /* Info.plist in Resources */,
-				1AF7BE8E2456945800E6941A /* LaunchScreen.storyboard in Resources */,
-				1AF7BE8B2456945800E6941A /* Assets.xcassets in Resources */,
-				1AF7BE892456945600E6941A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1CB5FF5950CEE90F445BB697 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NotificationService-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		835A21B5164305AC0B6AAC7A /* [CP] Check Pods Manifest.lock */ = {
+		6ABA56E27FA9F9BA0837B283 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -303,7 +286,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BA2BBF499B5204BB4929A207 /* [CP] Embed Pods Frameworks */ = {
+		955D3C2888FFA63534653B03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotificationService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3E5FCE35445FC0420154B37 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -323,48 +328,48 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1AE528322457FE91002EC564 /* Sources */ = {
+		1AFF8F1424594B74007A90B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AFF8F2324594B74007A90B5 /* ViewController.m in Sources */,
+				1AFF8F1D24594B74007A90B5 /* AppDelegate.m in Sources */,
+				1AFF8F2E24594B75007A90B5 /* main.m in Sources */,
+				1AFF8F2024594B74007A90B5 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1AF7BE772456945600E6941A /* Sources */ = {
+		1AFF8F3424594C4B007A90B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AF7BE862456945600E6941A /* ViewController.m in Sources */,
-				1AF7BE802456945600E6941A /* AppDelegate.m in Sources */,
-				1AE528462457FEBB002EC564 /* NotificationService.m in Sources */,
-				1AF7BE912456945800E6941A /* main.m in Sources */,
-				1AF7BE832456945600E6941A /* SceneDelegate.m in Sources */,
+				1AFF8F3C24594C4B007A90B5 /* NotificationService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1AE5283D2457FE91002EC564 /* PBXTargetDependency */ = {
+		1AFF8F3F24594C4B007A90B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1AE528352457FE91002EC564 /* NotificationService */;
-			targetProxy = 1AE5283C2457FE91002EC564 /* PBXContainerItemProxy */;
+			target = 1AFF8F3724594C4B007A90B5 /* NotificationService */;
+			targetProxy = 1AFF8F3E24594C4B007A90B5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1AF7BE872456945600E6941A /* Main.storyboard */ = {
+		1AFF8F2424594B74007A90B5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1AF7BE882456945600E6941A /* Base */,
+				1AFF8F2524594B74007A90B5 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1AF7BE8C2456945800E6941A /* LaunchScreen.storyboard */ = {
+		1AFF8F2924594B75007A90B5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1AF7BE8D2456945800E6941A /* Base */,
+				1AFF8F2A24594B75007A90B5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -372,45 +377,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1AE528402457FE91002EC564 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5DFFA15B622D5E78EC9DD02 /* Pods-NotificationService.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9Y64278C3K;
-				INFOPLIST_FILE = NotificationService/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vizury.VizuryObjCSample.NotificationService;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		1AE528412457FE91002EC564 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D06B0C46A8B2E49E77F78950 /* Pods-NotificationService.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9Y64278C3K;
-				INFOPLIST_FILE = NotificationService/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vizury.VizuryObjCSample.NotificationService;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		1AF7BE922456945800E6941A /* Debug */ = {
+		1AFF8F2F24594B75007A90B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -468,7 +435,7 @@
 			};
 			name = Debug;
 		};
-		1AF7BE932456945800E6941A /* Release */ = {
+		1AFF8F3024594B75007A90B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -520,42 +487,80 @@
 			};
 			name = Release;
 		};
-		1AF7BE952456945800E6941A /* Debug */ = {
+		1AFF8F3224594B75007A90B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AC051882C4EA915D9554958 /* Pods-VizuryObjCSample.debug.xcconfig */;
+			baseConfigurationReference = F6B04FF74C371F14B354FB7F /* Pods-VizuryObjCSample.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VizuryObjCSample/VizuryObjCSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9Y64278C3K;
-				FRAMEWORK_SEARCH_PATHS = "";
+				DEVELOPMENT_TEAM = UVJQV2LNHC;
 				INFOPLIST_FILE = VizuryObjCSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vizury.VizuryObjCSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vizury.objcsample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1AF7BE962456945800E6941A /* Release */ = {
+		1AFF8F3324594B75007A90B5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD2726EEC32A92A085D71D21 /* Pods-VizuryObjCSample.release.xcconfig */;
+			baseConfigurationReference = CBF2E5EDDD53712188C6E4DD /* Pods-VizuryObjCSample.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VizuryObjCSample/VizuryObjCSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9Y64278C3K;
-				FRAMEWORK_SEARCH_PATHS = "";
+				DEVELOPMENT_TEAM = UVJQV2LNHC;
 				INFOPLIST_FILE = VizuryObjCSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vizury.VizuryObjCSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vizury.objcsample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1AFF8F4224594C4B007A90B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3180258A8DFAE2B08DF997D /* Pods-NotificationService.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationService/NotificationService.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UVJQV2LNHC;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vizury.objcsample.NotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AFF8F4324594C4B007A90B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7D321971AFE77554004543E /* Pods-NotificationService.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationService/NotificationService.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UVJQV2LNHC;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vizury.objcsample.NotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -563,34 +568,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1AE5283F2457FE91002EC564 /* Build configuration list for PBXNativeTarget "NotificationService" */ = {
+		1AFF8F1324594B74007A90B5 /* Build configuration list for PBXProject "VizuryObjCSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1AE528402457FE91002EC564 /* Debug */,
-				1AE528412457FE91002EC564 /* Release */,
+				1AFF8F2F24594B75007A90B5 /* Debug */,
+				1AFF8F3024594B75007A90B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1AF7BE762456945600E6941A /* Build configuration list for PBXProject "VizuryObjCSample" */ = {
+		1AFF8F3124594B75007A90B5 /* Build configuration list for PBXNativeTarget "VizuryObjCSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1AF7BE922456945800E6941A /* Debug */,
-				1AF7BE932456945800E6941A /* Release */,
+				1AFF8F3224594B75007A90B5 /* Debug */,
+				1AFF8F3324594B75007A90B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1AF7BE942456945800E6941A /* Build configuration list for PBXNativeTarget "VizuryObjCSample" */ = {
+		1AFF8F4424594C4B007A90B5 /* Build configuration list for PBXNativeTarget "NotificationService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1AF7BE952456945800E6941A /* Debug */,
-				1AF7BE962456945800E6941A /* Release */,
+				1AFF8F4224594C4B007A90B5 /* Debug */,
+				1AFF8F4324594C4B007A90B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1AF7BE732456945600E6941A /* Project object */;
+	rootObject = 1AFF8F1024594B74007A90B5 /* Project object */;
 }

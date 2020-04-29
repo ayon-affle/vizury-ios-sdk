@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  VizuryObjCSample
 //
-//  Created by Chowdhury Md Rajib  Sarwar on 25/4/20.
+//  Created by Chowdhury Md Rajib  Sarwar on 29/4/20.
 //  Copyright © 2020 Chowdhury Md Rajib  Sarwar. All rights reserved.
 //
 
@@ -28,49 +28,52 @@
 @implementation AppDelegate
 
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    // intialize Vizury SDK
     [VizuryEventLogger initializeEventLoggerInApplication:application
-                                        WithPackageId:@"1"
-                                        ServerURL:@"https://www.vizury.com/analyze/analyze.php"
-                                        WithCachingEnabled:false
-                                        AndWithFCMEnabled:true];
-    
+                                            WithPackageId:@"1"
+                                            ServerURL: @"https://www.vizury.com/analyze/analyze.php"
+                                            WithCachingEnabled:false
+                                            AndWithFCMEnabled:true];
+
+    // Register for remote notifications. This shows a permission dialog on first run, to
+    // show the dialog at a more appropriate time move this registration accordingly.
     if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_7_1) {
-           // iOS 7.1 or earlier. Disable the deprecation warnings.
-           #pragma clang diagnostic push
-           #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-           UIRemoteNotificationType allNotificationTypes =
-           (UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge);
-           [application registerForRemoteNotificationTypes:allNotificationTypes];
-           #pragma clang diagnostic pop
-       } else {
-           // iOS 8 or later
-           // [START register_for_notifications]
-           if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
-               #pragma clang diagnostic push
-               #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-               UIUserNotificationType allNotificationTypes =
-               (UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge);
-               UIUserNotificationSettings *settings =
-               [UIUserNotificationSettings settingsForTypes:allNotificationTypes categories:nil];
-               [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
-           } else {
-               // iOS 10 or later
-               #if defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
-               // For iOS 10 display notification (sent via APNS)
-               [UNUserNotificationCenter currentNotificationCenter].delegate = self;
-               UNAuthorizationOptions authOptions =
-               UNAuthorizationOptionAlert | UNAuthorizationOptionSound | UNAuthorizationOptionBadge;
-               [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:authOptions completionHandler:^(BOOL granted, NSError * _Nullable error) {
-               }];
-               #endif
-           }
-       }
-    
-    [[UIApplication sharedApplication] registerForRemoteNotifications];
+        // iOS 7.1 or earlier. Disable the deprecation warnings.
+        #pragma clang diagnostic push
+        #pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        UIRemoteNotificationType allNotificationTypes =
+        (UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge);
+        [application registerForRemoteNotificationTypes:allNotificationTypes];
+        #pragma clang diagnostic pop
+    } else {
+        // iOS 8 or later
+        // [START register_for_notifications]
+        if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
+            #pragma clang diagnostic push
+            #pragma clang diagnostic ignored "-Wdeprecated-declarations"
+            UIUserNotificationType allNotificationTypes =
+            (UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge);
+            UIUserNotificationSettings *settings =
+            [UIUserNotificationSettings settingsForTypes:allNotificationTypes categories:nil];
+            [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+        } else {
+            // iOS 10 or later
+            #if defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
+            // For iOS 10 display notification (sent via APNS)
+            [UNUserNotificationCenter currentNotificationCenter].delegate = self;
+            UNAuthorizationOptions authOptions =
+            UNAuthorizationOptionAlert | UNAuthorizationOptionSound | UNAuthorizationOptionBadge;
+            [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:authOptions completionHandler:^(BOOL granted, NSError * _Nullable error) {
+            }];
+            #endif
+        }
+        
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
+        // [END register_for_notifications]
+    }
     
     return YES;
 }
@@ -99,6 +102,8 @@
     }
 }
 
+// [START ios_10_message_handling]
+// Receive displayed notifications for iOS 10 devices.
 #if defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
 // Handle incoming notification messages while app is in the foreground.
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center
@@ -122,21 +127,34 @@
     completionHandler();
 }
 #endif
+// [END ios_10_message_handling]
 
-#pragma mark - UISceneSession lifecycle
 
 
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
+- (void)applicationWillResignActive:(UIApplication *)application {
+    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
 }
 
 
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+}
+
+
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+}
+
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+}
+
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
 

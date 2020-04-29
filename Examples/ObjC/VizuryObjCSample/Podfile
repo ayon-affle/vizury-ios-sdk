@@ -6,16 +6,17 @@ target 'VizuryObjCSample' do
   use_frameworks!
 
   # Pods for VizuryObjCSample
-    pod 'VizuryEventLogger'
+    pod 'VizuryEventLogger', :git => 'https://github.com/ayon-affle/vizury-ios-sdk.git', :tag => 'vizuryeventlogger-1.1.7'
     pod 'Firebase/Messaging'
-
+    pod 'Firebase/Analytics'
 end
+
 
 target 'NotificationService' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for VizuryObjCSample
-    pod 'VizuryRichNotification'
+    pod 'VizuryRichNotification', :git => 'https://github.com/ayon-affle/vizury-ios-sdk.git', :tag => 'richpush-1.1.2'
 
 end
