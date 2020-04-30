@@ -23,7 +23,8 @@ CocoaPods is a dependency manager for Objective C & Swift projects and makes int
 2. If you don't have a Podfile, create a plain text file named Podfile in the Xcode project directory with the following content, making sure to set the platform and version that matches your app.
 
     ```pod 'VizuryEventLogger'```<br>
-    ```pod 'VizuryRichNotification'```<br>
+    ```pod 'VizuryRichNotification'```
+    
   To resolve unwanted issues, please add the following Firebase pod:<br>
     ```pod 'Firebase/Messaging'```
     
