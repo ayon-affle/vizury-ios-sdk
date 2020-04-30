@@ -1,4 +1,12 @@
 ![Vizury Logo](resources/VizuryLogo.png)
+# VizuryEventLogger
+
+[![Version](https://img.shields.io/cocoapods/v/VizuryEventLogger.svg?style=flat)](http://cocoapods.org/pods/VizuryEventLogger)
+[![License](https://img.shields.io/cocoapods/l/VizuryEventLogger.svg?style=flat)](http://cocoapods.org/pods/VizuryEventLogger)
+
+Vizury is a commerce marketing platform and its personalized retargeting stack is used by digital companies to grow marketing ROI and enhance transactions. 
+
+
 
 ## Summary
  This is iOS SDK integration guide. The SDK supports iOS9 and above.
