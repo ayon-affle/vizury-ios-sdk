@@ -25,7 +25,7 @@ CocoaPods is a dependency manager for Objective C & Swift projects and makes int
     ```pod 'VizuryEventLogger'```<br>
     ```pod 'VizuryRichNotification'```
     
-  To resolve unwanted issues, please add the following Firebase pod:<br>
+    To resolve unwanted issues, please add the following Firebase pod:<br>
     ```pod 'Firebase/Messaging'```
     
 3. Install `VizuryEventLogger` and `VizuryRichNotification` SDK by executing the following in the Xcode project directory.
