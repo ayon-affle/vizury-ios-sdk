@@ -135,7 +135,7 @@ Create an attributeDictionary with the attributes associated with the event and 
 
 ## Push Notifications
 
-For sending push notifications we are using GCM-APNS interface. For this you need to configure the App for push notifications in [Apple Developer Member Center][apple-dev-member-center] and get a configuration file from google.
+For sending push notifications we are using GCM-APNS interface. For this you need to configure the App for push notifications in [Apple Developer Member Center](https://developer.apple.com/membercenter/index.action) and get a configuration file from google.
 
 ### Configuring Apple Developer Settings
 
@@ -147,7 +147,7 @@ b) Create an App ID
 
 c) Provisioning profile for that App ID.
 
-You can create them in the [Apple Developer Member Center][https://developer.apple.com/membercenter/index.action] by following [these steps][provisioning-profiles]
+You can create them in the [Apple Developer Member Center](https://developer.apple.com/membercenter/index.action) by following [these steps](https://firebase.google.com/docs/cloud-messaging/ios/certs)
 
 
 ### Configuring project for FCM
