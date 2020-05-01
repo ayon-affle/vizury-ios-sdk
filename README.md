@@ -147,7 +147,7 @@ b) Create an App ID
 
 c) Provisioning profile for that App ID.
 
-You can create them in the [Apple Developer Member Center][apple-dev-member-center] by following [these steps][provisioning-profiles]
+You can create them in the [Apple Developer Member Center][https://developer.apple.com/membercenter/index.action] by following [these steps][provisioning-profiles]
 
 
 ### Configuring project for FCM
