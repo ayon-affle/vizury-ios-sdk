@@ -175,6 +175,27 @@ $ pod install
 $ open your-project.xcworkspace
 
 
+#### Enabling FCM
+
+Create a Firebase project in the [Firebase console][firebase-console] if you don't already have one. Enter the `Project-Name`.
+
+![createProject-1](resources/firebase1.png)
+
+Click on `iOS` option and in the next screen add the `iOS Bundle Id`. The `iOS Bundle Id` should be same as your apps bundle identifier. You can download the `GoogleService-Info.plist` file in the next step.
+
+![createProject-2](resources/firebase2.png)
+
+`Note : The GoogleService-Info.plist file that you have downloaded will have certain settings like IS_ADS_ENABLED, IS_SIGNIN_ENABLED set as YES. You have to add correspinding pod dependencies for the same or you can turn them off if you are not using them`
+
+Next click on the `Settings icon` option of the created project.
+
+![createProject-3](resources/firebase3.png )
+
+Click on `Cloud Messaging` tab and upload APNs Authentication Key (.p8 format). Also note down the the `Server key` as this will be required later during the integration. You can also upload APNs certificaties but configuration with auth keys is recommended as they are the more current method for sending notifications to iOS
+
+![createProject-4](resources/firebase4.png )
+
+
 ## Support
 Please visit this repository's [Github issue tracker](https://github.com/ayon-affle/vizury-ios-sdk/issues) for bug reports specific to our iOS SDK.
 For other issues and support please contact Vizury support from your dashboard.
