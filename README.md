@@ -204,6 +204,205 @@ While uploading APNs Authentication Key (.p8 format) you need to enter the Key I
 
 ![createProject-4](resources/teamID.png )
 
+### Configuring Application
+
+* Drag the GoogleService-Info.plist file you just downloaded into the root of your Xcode project and add it to all targets
+* Register for Push notifications inside `didFinishLaunchingWithOptions` method of you `AppDelegate`
+
+#### Objective-C
+----
+```objc
+    // Register for remote notifications. This shows a permission dialog on first run, to
+    // show the dialog at a more appropriate time move this registration accordingly.
+    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_7_1) {
+        // iOS 7.1 or earlier. Disable the deprecation warnings.
+        #pragma clang diagnostic push
+        #pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        UIRemoteNotificationType allNotificationTypes =
+        (UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge);
+        [application registerForRemoteNotificationTypes:allNotificationTypes];
+        #pragma clang diagnostic pop
+    } else {
+        // iOS 8 or later
+        // [START register_for_notifications]
+        if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
+            #pragma clang diagnostic push
+            #pragma clang diagnostic ignored "-Wdeprecated-declarations"
+            UIUserNotificationType allNotificationTypes =
+            (UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge);
+            UIUserNotificationSettings *settings =
+            [UIUserNotificationSettings settingsForTypes:allNotificationTypes categories:nil];
+            [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+        } else {
+            // iOS 10 or later
+            #if defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
+            // For iOS 10 display notification (sent via APNS)
+            [UNUserNotificationCenter currentNotificationCenter].delegate = self;
+            UNAuthorizationOptions authOptions =
+            UNAuthorizationOptionAlert | UNAuthorizationOptionSound | UNAuthorizationOptionBadge;
+            [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:authOptions completionHandler:^(BOOL granted, NSError * _Nullable error) {
+            }];
+            #endif
+        }
+        
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
+        // [END register_for_notifications]
+```
+
+#### Swift
+----
+```swift
+        if #available(iOS 10.0, *) {
+            let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+            UNUserNotificationCenter.current().requestAuthorization(
+                options: authOptions,
+                completionHandler: {_, _ in })
+            UNUserNotificationCenter.current().delegate = self
+        } else {
+            let settings: UIUserNotificationSettings =
+                UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+            application.registerUserNotificationSettings(settings)
+        }
+        application.registerForRemoteNotifications()
+```
+
+* For iOS10 and above you also need to add the below code. You can refer to the example app.
+
+```objc
+#if defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
+@import UserNotifications;
+#endif
+
+// Implement UNUserNotificationCenterDelegate to receive display notification via APNS for devices
+// running iOS 10 and above.
+#if defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
+@interface AppDelegate () <UNUserNotificationCenterDelegate>
+@end
+#endif
+
+```
+
+* Post Registration 
+
+Pass the APNS token to Vizury
+
+#### Objective-C
+----
+```objc
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+
+    [VizuryEventLogger registerForPushWithToken:deviceToken];
+}
+```
+
+#### Swift
+-----
+```swift
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        VizuryEventLogger.registerForPush(withToken: deviceToken)
+    }
+```
+
+In case of any failed registration
+
+#### Objective-C
+----
+```objc
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+
+    [VizuryEventLogger didFailToRegisterForPush];
+}
+```
+
+#### Swift
+-----
+```swift
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        VizuryEventLogger.didFailToRegisterForPush()
+    }
+```    
+
+* Handling notification payload
+
+#### Objective-C
+-----
+```objc
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(							UIBackgroundFetchResult))completionHandler {
+    [VizuryEventLogger didReceiveRemoteNotificationInApplication:application withUserInfo:userInfo];
+ }
+```
+
+#### Swift
+----
+```swift
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any], fetchCompletionHandler 			completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {        
+        VizuryEventLogger.didReceiveRemoteNotification(in: application, withUserInfo: userInfo)
+        if (application.applicationState == UIApplicationState.inactive) {
+            self.customPushHandler(userInfo: userInfo)
+        }
+        completionHandler(UIBackgroundFetchResult.newData)
+    }
+    
+    @available(iOS 10.0, *)
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler 			completionHandler: @escaping () -> Void) {
+        let pushDictionary = response.notification.request.content.userInfo
+        VizuryEventLogger.didReceiveResponse(userInfo: pushDictionary)
+        self.customPushHandler(userInfo: pushDictionary)
+        completionHandler();
+    }
+```
+
+### Deeplinks
+
+In order to open Deep Links that are sent to the device as a Key/Value pair along with a push notification you must implement a custom handler
+
+#### Objective-C
+-----
+```objc
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(							UIBackgroundFetchResult))completionHandler {
+    [VizuryEventLogger didReceiveRemoteNotificationInApplication:application withUserInfo:userInfo];
+    if(application.applicationState == UIApplicationStateInactive) {
+        NSLog(@"Appilication Inactive - the user has tapped in the notification when app was closed or in background");
+    	[self customPushHandler:userInfo];
+    }
+ }
+
+- (void) customPushHandler:(NSDictionary *)notification {
+    if (notification !=nil && [notification objectForKey:@"deeplink"] != nil) {
+        NSString* deeplink = [notification objectForKey:@"deeplink"];
+        NSLog(@"%@",deeplink);
+        // Here based on the deeplink you can open specific screens that's part of your app
+    }
+}
+```
+
+#### Swift
+----
+```swift
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any], fetchCompletionHandler 			completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {        
+        VizuryEventLogger.didReceiveRemoteNotification(in: application, withUserInfo: userInfo)
+        if (application.applicationState == UIApplicationState.inactive) {
+            self.customPushHandler(userInfo: userInfo)
+        }
+        completionHandler(UIBackgroundFetchResult.newData)
+    }
+    
+    @available(iOS 10.0, *)
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler 			completionHandler: @escaping () -> Void) {
+        let pushDictionary = response.notification.request.content.userInfo
+        VizuryEventLogger.didReceiveResponse(userInfo: pushDictionary)
+        self.customPushHandler(userInfo: pushDictionary)
+        completionHandler();
+    }
+    
+    func customPushHandler(userInfo : [AnyHashable : Any]) {        
+        if let deeplink =  userInfo[AnyHashable("deeplink")] {
+	    // handle the deeplink
+            print("deeplink is ", deeplink)
+        } 
+    }
+```
+
 ## Support
 Please visit this repository's [Github issue tracker](https://github.com/ayon-affle/vizury-ios-sdk/issues) for bug reports specific to our iOS SDK.
 For other issues and support please contact Vizury support from your dashboard.
