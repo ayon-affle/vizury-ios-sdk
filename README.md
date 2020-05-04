@@ -177,7 +177,7 @@ $ open your-project.xcworkspace
 
 #### Enabling FCM
 
-Create a Firebase project in the [Firebase console][firebase-console] if you don't already have one. Enter the `Project-Name`.
+Create a Firebase project in the [Firebase console](https://console.firebase.google.com/u/0/) if you don't already have one. Enter the `Project-Name`.
 
 ![createProject-1](resources/firebase1.png)
 
