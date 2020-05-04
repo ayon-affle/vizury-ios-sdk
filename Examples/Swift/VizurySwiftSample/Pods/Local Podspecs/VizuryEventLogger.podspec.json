@@ -1,12 +1,12 @@
 {
   "name": "VizuryEventLogger",
-  "version": "1.1.7",
+  "version": "1.1.9",
   "summary": "Vizury Event Logger for iOS",
   "description": "Vizury is a mobile marketing automation company. This framework helps to track events of users.",
   "homepage": "https://affle.com",
   "documentation_url": "https://github.com/ayon-affle/vizury-ios-sdk",
   "license": {
-    "type": "MIT",
+    "type": "Commercial",
     "file": "LICENSE"
   },
   "authors": {
@@ -17,7 +17,7 @@
   },
   "source": {
     "git": "https://github.com/ayon-affle/vizury-ios-sdk.git",
-    "tag": "vizuryeventlogger-1.1.7"
+    "tag": "vizuryeventlogger-1.1.9"
   },
   "ios": {
     "vendored_frameworks": "Frameworks/VizuryEventLogger/VizuryEventLogger.framework"
