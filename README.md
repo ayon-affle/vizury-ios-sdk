@@ -173,7 +173,7 @@ pod 'Firebase/Messaging'
 ```
 $ pod install
 $ open your-project.xcworkspace
-
+```
 
 #### Enabling FCM
 
