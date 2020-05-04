@@ -198,7 +198,7 @@ Click on `Cloud Messaging` tab and upload APNs Authentication Key (.p8 format). 
 While uploading APNs Authentication Key (.p8 format) you need to enter the Key Id and Team Id. 
 1. 'Key ID' is the id of the authentication key you created in Apple developer console under `Certificates, Identifiers & Profiles` -> Keys -> Select the particular certificate.
 
-![createProject-4](resources/keyId.png )
+![createProject-4](resources/keyID.png )
 
 2. 'Team ID' is the Team Member ID in Apple developer console under Membership -> Membership Details
 
