@@ -6,7 +6,7 @@
 	<dict>
 		<key>DoubleButtonTableCell.nib</key>
 		<data>
-		NnXm6fVX83FDGED10MiPaKJICro=
+		41wToxy5KZfRQxQ/uM7l+IEJ5rE=
 		</data>
 		<key>Headers/VizuryEventLogger.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>ImageTableCell.nib</key>
 		<data>
-		sjg88U4jghVAmL6Yt7saGceREx4=
+		jdlu/VfQMrTp3ta6a9fn+aCYLbY=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>SingleButtonTableCell.nib</key>
 		<data>
-		nMavsXeGNjC//p5ALKfGFVf11BU=
+		CBmXGbXt+V9Tiub1suXT9m52UQs=
 		</data>
 		<key>TextTableCell.nib</key>
 		<data>
-		0wPNN0Mp8rQ595CysQxxN2h1zLU=
+		4GCJsky+uM7K/bQiGW34Zx41QU8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -39,7 +39,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			utt8SbM6liCAPwPMj5ErTptyPYZJLc07pEZg2iW+LTA=
+			Vqw0HcLh4y2r45ycXpNb0B8YoNtbcHm/Ll95nDUAs2E=
 			</data>
 		</dict>
 		<key>Headers/VizuryEventLogger.h</key>
@@ -53,7 +53,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5dJbl219qxeEjgM3Dgnlg0enyCbYBVV7gcAb6hIi/WI=
+			uZ7eGZXCe7aHLua6CCYumqXBQ8G4IRRhWjwt5KcLFzw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -67,14 +67,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			39wAqXb4cOo1nNwF+4OuSk6P44hPWTb6pcHBM5r5Ieg=
+			gD7Ty6wsZwfFU+SZH1Ldh4KJTWWaNGJzd2O3MWvW/NU=
 			</data>
 		</dict>
 		<key>TextTableCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aozEchwDP6qXJYi+PQgvMhdOg09xUEMT2qEy9bCxMCU=
+			KVKREBFLMbTn+Rl47FyMlKuXSD8UmGPnZ4AjqbZirVo=
 			</data>
 		</dict>
 	</dict>

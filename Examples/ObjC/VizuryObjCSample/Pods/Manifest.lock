@@ -81,7 +81,7 @@ PODS:
   - nanopb/encode (1.30905.0)
   - PromisesObjC (1.2.9)
   - Protobuf (3.12.0)
-  - VizuryEventLogger (1.2.0)
+  - VizuryEventLogger (1.2.1)
   - VizuryRichNotification (1.1.1)
 
 DEPENDENCIES:
@@ -133,7 +133,7 @@ SPEC CHECKSUMS:
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
   Protobuf: 2793fcd0622a00b546c60e7cbbcc493e043e9bb9
-  VizuryEventLogger: 6c816a629589518c242f3a99c7786a7407b20d54
+  VizuryEventLogger: a62914fa1e0a35e8c01c93de44d4a1fcd3e2137b
   VizuryRichNotification: a490cd7eb893d93519877d18e3f98245410b2f29
 
 PODFILE CHECKSUM: 830aad132beff8089c25a93c7002a341e3560318
