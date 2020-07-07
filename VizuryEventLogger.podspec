@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => 'Commercial', :file => 'LICENSE' }
   spec.author       = { 'Ayon Chowdhury' => 'ayon.chowdhury@affle.com' }
   spec.platform     = :ios
-  spec.ios.deployment_target = '8.0'
+  spec.ios.deployment_target = '9.0'
 
   spec.source       = {
                     :http => 'https://github.com/ayon-affle/vizury-ios-sdk/blob/master/Frameworks/VizuryEventLogger/VizuryEventLogger.zip',
