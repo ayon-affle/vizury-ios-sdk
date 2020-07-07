@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "VizuryEventLogger"
-  spec.version      = "1.2.9"
+  spec.version      = "1.3.0"
   spec.summary      = "Vizury Event Logger for iOS"
   spec.description  = <<-DESC
                       Vizury is a mobile marketing automation company. This framework helps to track events of users.
@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '8.0'
 
   spec.source       = {
-                    :http => 'https://bitbucket.org/vizury/vizury-ios-sdk/src/master/binary/bitcode_disabled/VizuryEventLogger.framework.zip',
+                    :http => 'https://github.com/ayon-affle/vizury-ios-sdk/blob/master/Frameworks/VizuryEventLogger/VizuryEventLogger.zip',
                     :tag => 'vizuryeventlogger-' + spec.version.to_s
                     }
                   
