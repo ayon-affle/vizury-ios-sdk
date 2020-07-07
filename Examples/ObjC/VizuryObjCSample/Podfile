@@ -6,9 +6,9 @@ target 'VizuryObjCSample' do
   use_frameworks!
 
   # Pods for VizuryObjCSample
-    pod 'VizuryEventLogger'
-    pod 'Firebase/Messaging'
-    pod 'Firebase/Analytics'
+#    pod 'VizuryEventLogger'
+#    pod 'Firebase/Messaging'
+#    pod 'Firebase/Analytics'
 end
 
 
