@@ -29,7 +29,11 @@ Pod::Spec.new do |spec|
  spec.weak_framework = 'UserNotifications',  'WebKit'
 
  spec.static_framework = true
- spec.dependency 'Firebase'
- "ENABLE_BITCODE" => 'NO'
+ spec.dependency 'Firebase/CoreOnly'
+ spec.dependency 'FirebaseMessaging', '~> 4.6.1'
+ 
+ spec.xcconfig = {
+    'ENABLE_BITCODE' => 'NO'
+ }
  
 end
