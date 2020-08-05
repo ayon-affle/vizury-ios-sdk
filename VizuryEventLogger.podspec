@@ -30,7 +30,8 @@ Pod::Spec.new do |spec|
 
  spec.static_framework = true
  spec.dependency 'Firebase/CoreOnly'
- spec.dependency 'FirebaseMessaging', '~> 4.6.1'
+ spec.dependency 'FirebaseMessaging'
+ spec.dependency 'FirebaseAnalytics'
  
  spec.xcconfig = {
     'ENABLE_BITCODE' => 'NO'
