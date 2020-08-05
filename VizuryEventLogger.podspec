@@ -28,4 +28,8 @@ Pod::Spec.new do |spec|
  spec.frameworks = 'Foundation', 'UIKit', 'SystemConfiguration' , 'Security'
  spec.weak_framework = 'UserNotifications',  'WebKit'
 
+ spec.static_framework = true
+ spec.dependency 'Firebase'
+ "ENABLE_BITCODE" => 'NO'
+ 
 end
