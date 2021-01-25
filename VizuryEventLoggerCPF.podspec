@@ -24,13 +24,8 @@ Pod::Spec.new do |spec|
  spec.preserve_paths =  'Frameworks/VizuryEventLoggerCPF/VizuryEventLogger.framework'
  spec.module_map = 'Frameworks/VizuryEventLoggerCPF/VizuryEventLogger.framework/Modules/module.modulemap'
 
- spec.resource_bundles = {
-     'VizuryEventLoggerCPF' => ['Pod/Classes/**/*.xib']
- }
-
  spec.requires_arc = true
- spec.frameworks = 'Foundation', 'UIKit', 'SystemConfiguration' , 'Security'
- spec.weak_framework = 'UserNotifications',  'WebKit'
+ spec.frameworks = 'Foundation', 'UIKit', 'SystemConfiguration' , 'Security', UserNotificationsUI', 'UserNotifications', 'WebKit'
  
  spec.xcconfig = {
     'ENABLE_BITCODE' => 'NO'
