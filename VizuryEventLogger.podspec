@@ -1,34 +1,35 @@
 
-Pod::Spec.new do |spec|
+Pod::Spec.new do |s|
 
- spec.name         = "VizuryEventLogger"
- spec.version      = "1.5.2"
- spec.summary      = "Vizury Event Logger for iOS"
- spec.description  = <<-DESC
+ s.name         = "VizuryEventLogger"
+ s.version      = "1.5.3"
+ s.summary      = "Vizury Event Logger for iOS"
+ s.description  = <<-DESC
                     Vizury is a mobile marketing automation company. This framework helps to track events of users.
                     DESC
 
- spec.homepage     = "https://affle.com"
- spec.documentation_url = 'https://github.com/ayon-affle/vizury-ios-sdk'
- spec.license      = { :type => 'Commercial', :file => 'LICENSE' }
- spec.author       = { 'Ayon Chowdhury' => 'ayon.chowdhury@affle.com' }
- spec.platform     = :ios
- spec.ios.deployment_target = '9.0'
+ s.homepage     = "https://affle.com"
+ s.documentation_url = 'https://github.com/ayon-affle/vizury-ios-sdk'
+ s.license      = { :type => 'Commercial', :file => 'LICENSE' }
+ s.author       = { 'Ayon Chowdhury' => 'ayon.chowdhury@affle.com' }
+ s.platform     = :ios
+ s.ios.deployment_target = '9.0'
 
- spec.source       = {
+ s.source       = {
                         :git => 'https://github.com/ayon-affle/vizury-ios-sdk.git',
-                        :tag => 'vizuryeventlogger-' + spec.version.to_s
+                        :tag => 'vizuryeventlogger-' + s.version.to_s
                     }
 
- spec.ios.vendored_frameworks = 'Frameworks/VizuryEventLogger.framework'
- spec.preserve_paths =  'Frameworks/VizuryEventLogger.framework'
- spec.module_map = 'Frameworks/VizuryEventLogger.framework/Modules/module.modulemap'
+ s.ios.vendored_frameworks = 'Frameworks/VizuryEventLogger.framework', 'Frameworks/Protobuf.framework'
+ s.preserve_paths =  'Frameworks/VizuryEventLogger.framework', 'Frameworks/Protobuf.framework'
+ s.module_map = 'Frameworks/VizuryEventLogger.framework/Modules/module.modulemap', 'Frameworks/Protobuf.framework/Modules/module.modulemap'
 
- spec.requires_arc = true
- spec.frameworks = 'Foundation', 'UIKit', 'SystemConfiguration' , 'Security'
- spec.weak_framework = 'UserNotifications',  'WebKit'
- spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
- spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+ s.requires_arc = true
+ s.static_framework = true
+ s.frameworks = 'Foundation', 'UIKit', 'SystemConfiguration' , 'Security'
+ s.weak_framework = 'UserNotifications',  'WebKit'
+ s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+ s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
  
 end
