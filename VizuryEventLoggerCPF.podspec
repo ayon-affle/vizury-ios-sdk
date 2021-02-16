@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
  spec.name         = "VizuryEventLoggerCPF"
- spec.version      = "1.2.5"
+ spec.version      = "1.2.6"
  spec.summary      = "Vizury Event Logger for CPF"
  spec.description  = <<-DESC
                     Vizury is a mobile marketing automation company. This framework helps to track events of users.
@@ -21,8 +21,6 @@ Pod::Spec.new do |spec|
                     }
 
  spec.ios.vendored_frameworks = 'Frameworks/VizuryEventLoggerCPF/VizuryEventLogger.framework'
- spec.preserve_paths =  'Frameworks/VizuryEventLoggerCPF/VizuryEventLogger.framework'
- spec.module_map = 'Frameworks/VizuryEventLoggerCPF/VizuryEventLogger.framework/Modules/module.modulemap'
 
  spec.requires_arc = true
  spec.frameworks = 'Foundation', 'UIKit', 'SystemConfiguration', 'Security'
@@ -31,8 +29,5 @@ Pod::Spec.new do |spec|
  spec.xcconfig = {
     'ENABLE_BITCODE' => 'NO'
  }
-
- spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
- spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
  
 end
