@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
  s.name         = "VizuryEventLogger"
- s.version      = "1.6.2"
+ s.version      = "1.6.3"
  s.summary      = "Vizury Event Logger for iOS"
  s.description  = <<-DESC
                     Vizury is a mobile marketing automation company. This framework helps to track events of users.
