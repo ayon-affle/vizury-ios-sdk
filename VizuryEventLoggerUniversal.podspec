@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
  spec.ios.deployment_target = '9.0'
 
  spec.source       = {
-                        :git => 'https://github.com/ayon-affle/vizury-ios-sdk/blob/master/Frameworks/VizuryEventLoggerUniversal/VizuryEventLogger.xcframework.zip',
+                        :https => 'https://github.com/ayon-affle/vizury-ios-sdk/blob/master/Frameworks/VizuryEventLoggerUniversal/VizuryEventLogger.xcframework.zip',
                         :tag => 'vizuryeventloggeruniversal-' + spec.version.to_s
                     }
 
