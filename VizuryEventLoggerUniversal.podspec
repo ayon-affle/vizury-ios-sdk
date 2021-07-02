@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
  spec.name         = "VizuryEventLoggerUniversal"
- spec.version      = "1.5.4"
+ spec.version      = "1.5.5"
  spec.summary      = "Vizury Event Logger for iOS"
  spec.description  = <<-DESC
                     Vizury is a mobile marketing automation company. This framework helps to track events of users.
@@ -16,13 +16,11 @@ Pod::Spec.new do |spec|
  spec.ios.deployment_target = '9.0'
 
  spec.source       = {
-                        :git => 'https://github.com/ayon-affle/vizury-ios-sdk.git',
+                        :git => 'https://github.com/ayon-affle/vizury-ios-sdk/blob/master/Frameworks/VizuryEventLoggerUniversal/VizuryEventLogger.xcframework.zip',
                         :tag => 'vizuryeventloggeruniversal-' + spec.version.to_s
                     }
 
- spec.ios.vendored_frameworks = 'Frameworks/VizuryEventLoggerUniversal/VizuryEventLogger.framework'
- spec.preserve_paths =  'Frameworks/VizuryEventLoggerUniversal/VizuryEventLogger.framework'
- spec.module_map = 'Frameworks/VizuryEventLoggerUniversal/VizuryEventLogger.framework/Modules/module.modulemap'
+ spec.ios.vendored_frameworks = 'VizuryEventLogger.xcframework'
 
  spec.requires_arc = true
  spec.frameworks = 'Foundation', 'UIKit', 'SystemConfiguration' , 'Security'
